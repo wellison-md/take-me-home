@@ -1,0 +1,14 @@
+version: '3'
+services:
+  tmh-db:
+    image: mysql:8.0.32
+    container_name: 'tmh-db'
+    environment:
+      MYSQL_DATABASE: tmh-db
+      MYSQL_ROOT_PASSWORD: pswd
+
+    restart: always
+    ports:
+      - 6570:3306
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
