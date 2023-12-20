@@ -1,5 +1,15 @@
 version: '3'
 services:
+  frontend:
+    build: frontend
+    container_name: tmh-frontend
+    ports:
+      - 3000:3000
+    volumes:
+      - ./frontend/src:/app/src
+    depends_on:
+        - backend
+
   backend:
       build: backend
       container_name: tmh-backend

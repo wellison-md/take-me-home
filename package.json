@@ -8,8 +8,7 @@
     "install:frontend": "cd ./frontend && npm i",
     "up": "docker-compose up -d",
     "down": "docker-compose down --remove-orphans",
-    "startup":"docker-compose up -d && npm run install:backend && npm run install:front",
-    "inspect":"docker inspect tmh-db",
+    "inspect:db":"docker inspect tmh-db",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
