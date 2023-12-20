@@ -1,14 +1,37 @@
 version: '3'
 services:
-  tmh-db:
+  backend:
+      build: backend
+      container_name: tmh-backend
+      ports:
+        - 3001:3001
+      command: dev
+      volumes:
+        - ./backend/src:/app/src
+      environment:
+        MYSQL_USER: root
+        MYSQL_PASSWORD: password
+        MYSQL_HOSTNAME: db
+        MYSQL_PORT: 3306
+        MYSQL_DATABASE: tmh-db
+        MYSQL_ROOT_PASSWORD: pswd
+        PORT: 3001
+      depends_on:
+        db:
+          condition: service_healthy
+
+  db:
     image: mysql:8.0.32
     container_name: 'tmh-db'
     environment:
       MYSQL_DATABASE: tmh-db
       MYSQL_ROOT_PASSWORD: pswd
-
     restart: always
     ports:
-      - 6570:3306
+      - 3306:3306
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      timeout: 10s
+      retries: 5
     volumes:
       - ./sql:/docker-entrypoint-initdb.d
