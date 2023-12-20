@@ -1,5 +1,6 @@
 const express = require('express');
 const connection = require('./models/connection');
+const userRoutes = require('./routes/userRoutes');
 
 const app = express();
 app.use(express.json());
@@ -11,5 +12,7 @@ app.get('/', async (_req, res) => {
 
   return res.status(200).json(rows);
 })
+
+app.use(userRoutes);
 
 module.exports = app;
