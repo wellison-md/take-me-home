@@ -10,6 +10,17 @@ const getAll = async () => {
   return ({ status: 200, payload: users });
 }
 
+const getById = async (id) => {
+  const user = await userModel.getById(id);
+
+  if (!user) {
+    return ({ status: 404, payload: 'User not found' });
+  }
+
+  return ({ status: 200, payload: user });
+}
+
 module.exports = {
   getAll,
+  getById,
 }
