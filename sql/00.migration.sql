@@ -8,14 +8,15 @@ CREATE TABLE IF NOT EXISTS users (
 	id VARCHAR(36) PRIMARY KEY NOT NULL,
   fname VARCHAR(36) NOT NULL,
   lname VARCHAR(36) NOT NULL,
-  email VARCHAR(255) NOT NULL
+  email VARCHAR(255) NOT NULL,
+  pswd VARCHAR(255) NOT NULL
 ) ENGINE=INNODB;
 
-INSERT INTO users (id, fname, lname, email) VALUES
-('a4e54a24-9ebe-11ee-b889-0242ac170002', 'Erick', 'Forman', 'erick.forman@email.com'),
-('b3c07a80-9ebe-11ee-b889-0242ac170002', 'Donna', 'Pincioty', 'donna.pincioty@email.com'),
-('c93d788e-9ebe-11ee-b889-0242ac170002', 'James', 'Ney', 'jamesney@email.com'),
-(uuid(), 'Will', 'Smith', 'willsmith@email.com');
+INSERT INTO users (id, fname, lname, email, pswd) VALUES
+('a4e54a24-9ebe-11ee-b889-0242ac170002', 'Erick', 'Forman', 'erick.forman@email.com', 'b7fb0394c7183fd5cac17fb41961c826212a185070e4c1d2f4920e51c1dee35f'),
+('b3c07a80-9ebe-11ee-b889-0242ac170002', 'Donna', 'Pincioty', 'donna.pincioty@email.com', 'b7fb0394c7183fd5cac17fb41961c826212a185070e4c1d2f4920e51c1dee35f'),
+('c93d788e-9ebe-11ee-b889-0242ac170002', 'James', 'Ney', 'jamesney@email.com', 'b7fb0394c7183fd5cac17fb41961c826212a185070e4c1d2f4920e51c1dee35f'),
+(uuid(), 'Will', 'Smith', 'willsmith@email.com', 'b7fb0394c7183fd5cac17fb41961c826212a185070e4c1d2f4920e51c1dee35f');
 
 CREATE TABLE IF NOT EXISTS cities (
 	id INT AUTO_INCREMENT PRIMARY KEY,
