@@ -20,7 +20,18 @@ const getById = async (id) => {
   return ({ status: 200, payload: user });
 }
 
+const create = async(user = {}) => {
+  const createdUser = await userModel.create(user);
+
+  if (createdUser === 0) {
+    return ({ status: 400, payload: 'User not created' });
+  }
+
+  return ({ status: 201, payload: createdUser });
+}
+
 module.exports = {
   getAll,
   getById,
+  create,
 }
