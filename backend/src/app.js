@@ -2,6 +2,7 @@ const express = require('express');
 const connection = require('./models/connection');
 const userRoutes = require('./routes/userRoutes');
 const cityRoutes = require('./routes/cityRoutes');
+const categoryRoutes = require('./routes/categoryRoutes');
 
 const app = express();
 app.use(express.json());
@@ -16,5 +17,6 @@ app.get('/', async (_req, res) => {
 
 app.use(userRoutes);
 app.use(cityRoutes);
+app.use(categoryRoutes);
 
 module.exports = app;
