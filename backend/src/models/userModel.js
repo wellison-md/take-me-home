@@ -36,10 +36,19 @@ const create = async (user = {}) => {
   }
 
   const encryptedPswd = Bcrypt.hashSync(pswd, saltRounds);
+  const uuid = uuidv4();
 
-  const [affectedRows] = await connection.execute(
+  const [{ affectedRows }] = await connection.execute(
     'INSERT INTO `tmh-db`.users (id, fname, lname, email, pswd) VALUES (?, ?, ?, ?, ?)',
-    [uuidv4(), fname, lname, email, encryptedPswd]
+    [uuid, fname, lname, email, encryptedPswd]
+  );
+
+  return ({ status: 201, payload: { affectedRows, user: { uuid, fname, lname, email } } });
+}
+
+const deleteById = async (id) => {
+  const [{ affectedRows }] = await connection.execute(
+    'DELETE FROM `tmh-db`.users WHERE id = ?', [id]
   );
 
   return affectedRows;
@@ -49,4 +58,5 @@ module.exports = {
   getAll,
   getById,
   create,
+  deleteById,
 }
