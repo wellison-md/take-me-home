@@ -33,11 +33,11 @@ const create = async(user = {}) => {
 const deleteById = async (id) => {
   const deletedUser = await userModel.deleteById(id);
 
-  if (deletedUser === 0) {
-    return ({ status: 404, payload: 'Something went wrong' });
+  if (deletedUser !== 1) {
+    return ({ status: 404, payload: 'User not found' });
   }
 
-return ({ status: 200, payload: deletedUser });
+return ({ status: 200, payload: 'user deleted with success' });
 }
 
 module.exports = {
