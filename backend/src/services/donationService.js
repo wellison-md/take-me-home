@@ -20,7 +20,18 @@ const getById = async (id) => {
   return ({ status: 200, payload: donation });
 }
 
+const getByUserId = async (userId) => {
+  const donations = await donationModel.getByUserId(userId);
+
+  if (!donations || donations.length === 0) {
+    return ({ status: 404, payload: 'User not found' });
+  }
+
+  return ({ status: 200, payload: donations });
+}
+
 module.exports = {
   getAll,
   getById,
+  getByUserId,
 }

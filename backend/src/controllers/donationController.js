@@ -11,7 +11,14 @@ const getById = async (req, res) => {
   return res.status(response.status).json(response.payload);
 }
 
+const getByUserId = async (req, res) => {
+  const { id } = req.params;
+  const response = await donationService.getByUserId(id);
+  return res.status(response.status).json(response.payload);
+}
+
 module.exports = {
   getAll,
   getById,
+  getByUserId,
 }
