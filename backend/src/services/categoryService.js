@@ -10,6 +10,17 @@ const getAll = async () => {
   return ({ status: 200, payload: categories });
 }
 
+const getById = async (id) => {
+  const category = await categoryModel.getById(id);
+
+  if (!category) {
+    return ({ status: 404, payload: 'Category not found' });
+  }
+
+  return ({ status: 200, payload: category });
+}
+
 module.exports = {
   getAll,
+  getById,
 }

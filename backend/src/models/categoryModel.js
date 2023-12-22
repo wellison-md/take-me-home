@@ -7,6 +7,14 @@ const getAll = async () => {
   return categories;
 }
 
+const getById = async (id) => {
+  const [[city]] = await connection.execute(
+    'SELECT * FROM `tmh-db`.categories WHERE id = ?', [id]
+  );
+  return city;
+}
+
 module.exports = {
   getAll,
+  getById,
 }
