@@ -3,6 +3,7 @@ const connection = require('./models/connection');
 const userRoutes = require('./routes/userRoutes');
 const cityRoutes = require('./routes/cityRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
+const donationRoutes = require('./routes/donationRoutes');
 
 const app = express();
 app.use(express.json());
@@ -18,5 +19,6 @@ app.get('/', async (_req, res) => {
 app.use(userRoutes);
 app.use(cityRoutes);
 app.use(categoryRoutes);
+app.use(donationRoutes);
 
 module.exports = app;
