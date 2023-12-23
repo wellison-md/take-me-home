@@ -30,8 +30,20 @@ const getByUserId = async (userId) => {
   return ({ status: 200, payload: donations });
 }
 
+const makeDonation = async (donation = {}) => {
+  const newDonation = await donationModel.makeDonation(donation);
+
+  if (!newDonation || newDonation.status === 404) {
+    return ({ status: 404, payload: newDonation.payload });
+  }
+
+  return ({ status: 201, payload: 'Donation success' });
+
+}
+
 module.exports = {
   getAll,
   getById,
   getByUserId,
+  makeDonation,
 }

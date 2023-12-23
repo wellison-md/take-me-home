@@ -1,4 +1,5 @@
 const connection = require('./connection');
+const userModel = require('../models/userModel');
 
 const getAll = async () => {
   const [donations] = await connection.execute(
@@ -35,8 +36,25 @@ const getByUserId = async (userId) => {
   return donations;
 }
 
+const makeDonation = async (donation = {}) => {
+  const { uuid, amount } = donation;
+  const user = await userModel.getById(uuid);
+
+  if (!user) {
+    return ({ status: 404, payload: 'User not found' });
+  }
+
+  const [{ affectedRows }] = await connection.execute(
+    'INSERT INTO donations (user_id, amount) VALUES (?, ?)',
+    [uuid, amount],
+  )
+
+  return ({ status: 201, payload: affectedRows });
+}
+
 module.exports = {
   getAll,
   getById,
   getByUserId,
+  makeDonation,
 }
