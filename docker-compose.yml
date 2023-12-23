@@ -16,6 +16,7 @@ services:
       ports:
         - 3001:3001
       command: dev
+      restart: always
       volumes:
         - ./backend/src:/app/src
       environment:
