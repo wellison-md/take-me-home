@@ -54,18 +54,18 @@ const makeDonation = async (donation = {}) => {
 
 const getRanking = async () => {
   const [ranking] = await connection.execute(`
-  SELECT
-      u.fname,
-      SUM(d.amount) AS total
+    SELECT
+        u.fname,
+        SUM(d.amount) AS total
 
-  FROM users u
-  JOIN donations d
-      ON u.id = d.user_id
+    FROM users u
+    JOIN donations d
+        ON u.id = d.user_id
 
-  GROUP BY u.fname
-  ORDER BY total DESC;
-`);
-  console.log(ranking)
+    GROUP BY u.fname
+    ORDER BY total DESC;
+  `);
+
   return ranking;
 }
 
