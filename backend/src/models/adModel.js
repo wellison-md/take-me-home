@@ -7,6 +7,14 @@ const getAll = async () => {
   return ads;
 }
 
+const getById = async (id) => {
+  const [[ad]] = await connection.execute(`
+    SELECT * FROM ads WHERE id = ?
+  `, [id]);
+  return ad;
+}
+
 module.exports = {
   getAll,
+  getById,
 }

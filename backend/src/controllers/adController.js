@@ -5,6 +5,13 @@ const getAll = async (_req, res) => {
   return res.status(200).json(response);
 }
 
+const getById = async (req, res) => {
+  const { id } = req.params;
+  const response = await adService.getById(id);
+  return res.status(response.status).json(response.payload);
+}
+
 module.exports = {
   getAll,
+  getById,
 }
