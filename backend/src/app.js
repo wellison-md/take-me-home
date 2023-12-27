@@ -4,6 +4,7 @@ const userRoutes = require('./routes/userRoutes');
 const cityRoutes = require('./routes/cityRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 const donationRoutes = require('./routes/donationRoutes');
+const imageRoutes = require('./routes/imageRoutes');
 
 const app = express();
 app.use(express.json());
@@ -20,5 +21,6 @@ app.use(userRoutes);
 app.use(cityRoutes);
 app.use(categoryRoutes);
 app.use(donationRoutes);
+app.use(imageRoutes);
 
 module.exports = app;
