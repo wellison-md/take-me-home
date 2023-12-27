@@ -22,9 +22,15 @@ const makeDonation = async (req, res) => {
   return res.status(response.status).json(response.payload);
 }
 
+const getRanking = async (_req, res) => {
+  const response = await donationService.getRanking();
+  return res.status(200).json(response);
+}
+
 module.exports = {
   getAll,
   getById,
   getByUserId,
   makeDonation,
+  getRanking,
 }
