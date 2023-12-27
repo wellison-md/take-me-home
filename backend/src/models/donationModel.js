@@ -52,9 +52,27 @@ const makeDonation = async (donation = {}) => {
   return ({ status: 201, payload: affectedRows });
 }
 
+const getRanking = async () => {
+  const [ranking] = await connection.execute(`
+    SELECT
+        u.fname,
+        SUM(d.amount) AS total
+
+    FROM users u
+    JOIN donations d
+        ON u.id = d.user_id
+
+    GROUP BY u.fname
+    ORDER BY total DESC;
+  `);
+
+  return ranking;
+}
+
 module.exports = {
   getAll,
   getById,
   getByUserId,
   makeDonation,
+  getRanking,
 }

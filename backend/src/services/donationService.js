@@ -41,9 +41,15 @@ const makeDonation = async (donation = {}) => {
 
 }
 
+const getRanking = async () => {
+  const ranking = await donationModel.getRanking();
+  return ranking;
+}
+
 module.exports = {
   getAll,
   getById,
   getByUserId,
   makeDonation,
+  getRanking,
 }
