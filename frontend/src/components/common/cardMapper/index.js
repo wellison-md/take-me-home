@@ -8,7 +8,7 @@ export default function CardMapper({ list }) {
       {
         list.length === 0
         ? <p>Carregando...</p>
-        : list.map((p) => (<Card key={ p.id } { ...p } />))
+        : list.map((p) => (<Card key={ p.id } title={ `${p.fname} ${p.lname}` } id={ p.id} />))
       }
     </Container>
   );

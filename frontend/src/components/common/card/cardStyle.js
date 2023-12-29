@@ -9,6 +9,7 @@ export const CardContainer = styled.div`
   max-height: 325px;
   transition: 0.2s;
   max-width: 205px;
+  margin: 8px;
 
   & img {
     object-fit: cover;
