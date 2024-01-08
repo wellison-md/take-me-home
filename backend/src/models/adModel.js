@@ -1,6 +1,5 @@
 const connection = require('./connection');
 const { v4: uuidv4 } = require('uuid');
-const { compareAd } = require('../utils/ads');
 
 const getAll = async () => {
   const [ads] = await connection.execute(`
