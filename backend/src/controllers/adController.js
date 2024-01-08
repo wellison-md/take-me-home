@@ -11,7 +11,20 @@ const getById = async (req, res) => {
   return res.status(response.status).json(response.payload);
 }
 
+const getByPetname = async (req, res) => {
+  const { petname } = req.params;
+  const response = await adService.getByPetname(petname);
+  return res.status(response.status).json(response.payload);
+}
+
+const create = async (req, res) => {
+  const response = await adService.create(req.body);
+  return res.status(response.status).json(response.payload);
+}
+
 module.exports = {
   getAll,
   getById,
+  getByPetname,
+  create,
 }
