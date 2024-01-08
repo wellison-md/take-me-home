@@ -6,9 +6,11 @@ const categoryRoutes = require('./routes/categoryRoutes');
 const donationRoutes = require('./routes/donationRoutes');
 const imageRoutes = require('./routes/imageRoutes');
 const adRoutes = require('./routes/adRoutes');
+const cors = require('cors');
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.get('/', async (_req, res) => {
   const [[rows]] = await connection.execute(

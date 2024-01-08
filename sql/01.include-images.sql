@@ -1,0 +1,41 @@
+INSERT INTO `tmh-db`.images (ad_id, img_url) VALUES
+('b14bfce5-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('b14bfce5-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/11766335/pexels-photo-11766335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('b14bfce5-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/6853516/pexels-photo-6853516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('b14bfce5-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/12394094/pexels-photo-12394094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('b14bfce5-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/9375809/pexels-photo-9375809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('b14bfce5-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/9820758/pexels-photo-9820758.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('b14bfce5-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/2453272/pexels-photo-2453272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('b14bfce5-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/11766336/pexels-photo-11766336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+
+('0121b49e-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/56733/pexels-photo-56733.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('0121b49e-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/14459106/pexels-photo-14459106.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('0121b49e-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/2226006/pexels-photo-2226006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('0121b49e-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/3250454/pexels-photo-3250454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('0121b49e-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/1436495/pexels-photo-1436495.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('0121b49e-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/1438163/pexels-photo-1438163.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('0121b49e-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/10550431/pexels-photo-10550431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+
+('d757f580-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/220938/pexels-photo-220938.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('d757f580-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/10201413/pexels-photo-10201413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('d757f580-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/11958326/pexels-photo-11958326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('d757f580-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/7184160/pexels-photo-7184160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('d757f580-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/1938126/pexels-photo-1938126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('d757f580-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/6116934/pexels-photo-6116934.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('d757f580-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/3999248/pexels-photo-3999248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+
+('0dcc6c49-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/914794/pexels-photo-914794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('0dcc6c49-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/2253789/pexels-photo-2253789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('0dcc6c49-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/2253789/pexels-photo-2253789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('0dcc6c49-9eaa-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/3487177/pexels-photo-3487177.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+
+('2147456c-9eab-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/3974516/pexels-photo-3974516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('2147456c-9eab-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/2539094/pexels-photo-2539094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('2147456c-9eab-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/16257530/pexels-photo-16257530/free-photo-of-animal-bicho-animais-bichos.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('2147456c-9eab-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/1931371/pexels-photo-1931371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('2147456c-9eab-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/1287365/pexels-photo-1287365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+
+('f60b5996-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('f60b5996-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/1125979/pexels-photo-1125979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('f60b5996-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/8837891/pexels-photo-8837891.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+('f60b5996-9ea9-11ee-b889-0242ac170002', 'https://images.pexels.com/photos/7865576/pexels-photo-7865576.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');

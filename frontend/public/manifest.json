@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Take me home",
+  "name": "Take me home app",
   "icons": [
     {
       "src": "tmh-icon24.svg",
@@ -8,12 +8,12 @@
       "type": "image"
     },
     {
-      "src": "tmh-icon24.svg",
+      "src": "tmh-icon192.svg",
       "type": "image",
       "sizes": "192x192"
     },
     {
-      "src": "tmh-icon24.svg",
+      "src": "tmh-icon512.svg",
       "type": "image",
       "sizes": "512x512"
     }

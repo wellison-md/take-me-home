@@ -7,7 +7,7 @@
  - :zap: [Início rápido](#zap-início-rápido)
  - :pencil: [Protótipo](#protótipo-pencil)
    - [Considerações iniciais]()
-   - [Protótipo de alta fidelidade - Figma](https://www.figma.com/file/Bd1hgv2Kqu5LzZgWYwqBld/Take-me-home__high-fidelity?type=design&node-id=0%3A1&mode=design&t=PU3OMcgLHsVm2AIP-1)
+   - [Protótipo de alta fidelidade - Figma](https://www.figma.com/proto/Bd1hgv2Kqu5LzZgWYwqBld/Take-me-home__high-fidelity?type=design&node-id=1-6&t=ULTGyMqli22VNe3Y-1&scaling=scale-down-width&page-id=0%3A1&mode=design)
    - [Estudo de caso UX / UI]()
    - [Deploy preliminar]()
  - :construction: [Contribua com o projeto]()
