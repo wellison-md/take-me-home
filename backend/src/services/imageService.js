@@ -14,6 +14,11 @@ const getByAdId = async (id) => {
   return ({ status: 200, payload: images });
 }
 
+const getAdsAlbums = async () => {
+  const adAlbums = await imageModel.getAdsAlbums();
+  return adAlbums;
+}
+
 const getAlbumById = async (id) => {
   const imgs = await imageModel.getAlbumById(id);
 
@@ -27,4 +32,5 @@ module.exports = {
   getAll,
   getByAdId,
   getAlbumById,
+  getAdsAlbums,
 }

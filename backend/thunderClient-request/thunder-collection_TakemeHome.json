@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "TakemeHome",
-    "dateExported": "2024-01-09T20:44:36.200Z",
+    "dateExported": "2024-01-09T22:55:41.647Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -66,11 +66,25 @@
             "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
             "containerId": "",
             "name": "getImageAlbumById",
-            "url": "http://localhost:3001/images/0121b49e-9eaa-11ee-b889-0242ac170002",
+            "url": "http://localhost:3001/images/album/0121b49e-9eaa-11ee-b889-0242ac170002",
             "method": "GET",
             "sortNum": 24375,
             "created": "2024-01-09T20:24:18.469Z",
-            "modified": "2024-01-09T20:24:18.470Z",
+            "modified": "2024-01-09T21:58:22.035Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7435dde0-9d12-4602-9e44-ff3d19c00668",
+            "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
+            "containerId": "",
+            "name": "getImageAlbums",
+            "url": "http://localhost:3001/images/albums/ads",
+            "method": "GET",
+            "sortNum": 24687.5,
+            "created": "2024-01-09T22:36:40.821Z",
+            "modified": "2024-01-09T22:44:50.225Z",
             "headers": [],
             "params": [],
             "tests": []

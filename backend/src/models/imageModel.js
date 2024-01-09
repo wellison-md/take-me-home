@@ -14,6 +14,30 @@ const getByAdId = async (id) => {
   return images;
 }
 
+const getAdsAlbums = async () => {
+  const [adsAlbums] = await connection.execute(`
+  SELECT
+      a.id,
+      a.pet_name AS petName,
+      a.rescue_date AS rescueDate,
+      concat(a.age, " ", a.age_unit) AS age,
+      a.gender,
+      a.category_id AS categoryId,
+      c.category,
+      a.city_id AS cityId,
+      cy.name AS cityName,
+      i.img_url AS imgs,
+      a.create_date AS creationDate,
+      a.update_date AS lastUpdate
+  FROM ads a
+      JOIN images i      ON a.id = i.ad_id
+      JOIN categories c  ON a.category_id = c.id
+      JOIN cities cy     ON a.city_id = cy.id
+  ORDER BY a.id;
+  `);
+  return adsAlbums;
+}
+
 const getAlbumById = async (id) => {
   const [imgs] = await connection.execute(`
   SELECT
@@ -26,7 +50,9 @@ const getAlbumById = async (id) => {
       c.category,
       a.city_id AS cityId,
       cy.name AS cityName,
-      i.img_url AS imgs
+      i.img_url AS imgs,
+      a.create_date AS creationDate,
+      a.update_date AS lastUpdate
   FROM ads a
     JOIN images i      ON a.id = i.ad_id
     JOIN categories c  ON a.category_id = c.id
@@ -40,4 +66,5 @@ module.exports = {
   getAll,
   getByAdId,
   getAlbumById,
+  getAdsAlbums,
 }
