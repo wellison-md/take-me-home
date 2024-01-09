@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "TakemeHome",
-    "dateExported": "2023-12-23T00:21:22.064Z",
+    "dateExported": "2024-01-09T20:44:36.200Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -29,6 +29,48 @@
             "sortNum": 20000,
             "created": "2023-12-20T23:34:19.971Z",
             "modified": "2023-12-20T23:34:47.704Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5de3e6f4-f4b4-47db-be07-c1d3647536a7",
+            "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
+            "containerId": "",
+            "name": "getAllImages",
+            "url": "http://localhost:3001/images",
+            "method": "GET",
+            "sortNum": 22500,
+            "created": "2023-12-27T17:25:08.350Z",
+            "modified": "2023-12-27T17:25:30.480Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b2e56898-6c2b-4121-88c3-498016843dfb",
+            "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
+            "containerId": "",
+            "name": "getImageById",
+            "url": "http://localhost:3001/images/album/0121b49e-9eaa-11ee-b889-0242ac170002",
+            "method": "GET",
+            "sortNum": 23750,
+            "created": "2023-12-27T18:30:22.611Z",
+            "modified": "2024-01-09T20:42:14.159Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0a611b0d-663b-459c-8043-e61b369b1a57",
+            "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
+            "containerId": "",
+            "name": "getImageAlbumById",
+            "url": "http://localhost:3001/images/0121b49e-9eaa-11ee-b889-0242ac170002",
+            "method": "GET",
+            "sortNum": 24375,
+            "created": "2024-01-09T20:24:18.469Z",
+            "modified": "2024-01-09T20:24:18.470Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -76,6 +118,48 @@
             "tests": []
         },
         {
+            "_id": "8104373d-ff6b-4d53-91a1-443a5ffd87eb",
+            "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
+            "containerId": "",
+            "name": "getAds",
+            "url": "http://localhost:3001/ads",
+            "method": "GET",
+            "sortNum": 35625,
+            "created": "2023-12-27T18:05:32.300Z",
+            "modified": "2023-12-27T18:05:48.630Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5e15596e-09d7-4867-8504-687c82c70495",
+            "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
+            "containerId": "",
+            "name": "getAdById",
+            "url": "http://localhost:3001/ads/2147456c-9eab-11ee-b889-0242ac170002",
+            "method": "GET",
+            "sortNum": 35937.5,
+            "created": "2023-12-27T18:06:10.225Z",
+            "modified": "2023-12-27T18:17:34.888Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "20e2ccb9-5d00-41c1-ad62-f915fcdc7db8",
+            "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
+            "containerId": "",
+            "name": "getAdByPetname",
+            "url": "http://localhost:3001/ads/petname/alfred",
+            "method": "GET",
+            "sortNum": 36093.8,
+            "created": "2023-12-29T21:38:50.257Z",
+            "modified": "2023-12-29T21:41:43.970Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
             "_id": "37c0179e-e410-44fd-9f3a-f1582ca35ec1",
             "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
             "containerId": "",
@@ -85,6 +169,20 @@
             "sortNum": 36250,
             "created": "2023-12-22T22:51:35.151Z",
             "modified": "2023-12-22T22:51:52.977Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "17ff4fe0-98a3-4ba2-b78d-4d2df4df8080",
+            "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
+            "containerId": "",
+            "name": "getDonationsRaking",
+            "url": "http://localhost:3001/donation-ranking",
+            "method": "GET",
+            "sortNum": 36562.5,
+            "created": "2023-12-23T01:08:43.901Z",
+            "modified": "2023-12-27T16:32:29.268Z",
             "headers": [],
             "params": [],
             "tests": []
@@ -146,6 +244,25 @@
             "body": {
                 "type": "json",
                 "raw": "{\n  \"fname\": \"Homer3\",\n  \"lname\": \"Simpson2\",\n  \"email\": \"homer5@email.com\",\n  \"pswd\": \"@Homer_pswd123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c8aba1a2-33e7-48c0-a5c1-8ef95cdcd415",
+            "colId": "cf84d853-8223-4e32-ae93-919e4627acab",
+            "containerId": "",
+            "name": "createAd",
+            "url": "http://localhost:3001/ads",
+            "method": "POST",
+            "sortNum": 45000,
+            "created": "2023-12-29T20:56:18.963Z",
+            "modified": "2024-01-08T20:14:31.839Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"pet_name\": \"Jubileu244334\",\n  \"rescue_date\": \"2023-12-29\",\n  \"age\": 1,\n  \"age_unit\": \"year\",\n  \"gender\": \"female\",\n  \"category_id\": 5,\n  \"city_id\": 1\n}",
                 "form": []
             },
             "tests": []
