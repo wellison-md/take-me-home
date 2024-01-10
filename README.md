@@ -1,7 +1,7 @@
 # :cat: :dog: Take me home
 
 
-:dart: *Take me Home* é uma web-app cujo objetivo é conectar pessoas interessadas em adoção a animais que precisam de novos lares, por meio de uma plataforma moderna que facilita o processo de adoção.
+:dart: *Take me Home* é uma web-app cujo objetivo é conectar pessoas interessadas em adoção a animais que precisam de novos lares, por meio de uma plataforma moderna que facilita o processo de adoção. Este projeto faz parte dos meus projetos pessoais com o objetivo de consolidar meus conhecimentos em tecnologias
 
 ## Sumário
  - :zap: [Início rápido](#zap-início-rápido)
@@ -10,6 +10,9 @@
    - [Protótipo de alta fidelidade - Figma](https://www.figma.com/proto/Bd1hgv2Kqu5LzZgWYwqBld/Take-me-home__high-fidelity?type=design&node-id=1-6&t=ULTGyMqli22VNe3Y-1&scaling=scale-down-width&page-id=0%3A1&mode=design)
    - [Estudo de caso UX / UI]()
    - [Deploy preliminar]()
+ - :rocket: [Features ]()
+   - [Back-end features](./_docs/backend-features.md)
+   - [Front-end features]()
  - :construction: [Contribua com o projeto]()
 
 <br />
@@ -72,3 +75,5 @@ http://localhost:3000/
 
 ## Protótipo :pencil:
 
+
+## Features :rocket:
