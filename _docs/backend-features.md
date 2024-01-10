@@ -64,4 +64,4 @@ O serviço de *back-end* deste projeto provê uma singela *api-rest* desenvolvid
 | *GET*       | `/ads`           | [:mag_right:]() | Retorna a lista com todos os anúncios cadastrados. |
 | *GET*       | `/ads/{id}`      | [:mag_right:]() | Retorna um objeto do tipo "ads" apartir do seu id. |
 | *GET*       | `/ads/{petName}` | [:mag_right:]() | Retorna um objeto do tipo "ads" apartir do nome do pet. |
-| *POST*      | `/ads`           | [:mag_right:]() | Cria um objeto do tipo "donation" conforme middleware de validação. |
+| *POST*      | `/ads`           | [:mag_right:]() | Cria um objeto do tipo "ads" conforme middleware de validação. |
