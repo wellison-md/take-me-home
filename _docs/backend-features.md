@@ -14,9 +14,9 @@ O serviço de *back-end* deste projeto provê uma singela *api-rest* desenvolvid
 | :---:       | :---          | :---:            | :---          |
 | *GET*       | `/`           | [:mag_right:]()  | Retorna uma mensagem informando data/hora formado a partir de uma requisição ao banco de dados.|
 | *GET*       | `/users`      | [:mag_right:]()  | Retorna a lista com todos os usuários cadastrados. |
-| *GET*       | `/users/{id}` | [:mag_right:]()  | Retorna um objeto do tipo "usuário" apartir de seu id. |
-| *POST*      | `/users`      | [:mag_right:]()  | Cria um objeto "usuário" mediado pelo middleware de validação. |
-| *DELETE*    | `/users/{id}` | [:mag_right:]()  | Exclui Exclui um objeto "usuário" apartir de seu id. |
+| *GET*       | `/users/{id}` | [:mag_right:]()  | Retorna um objeto do tipo "user" apartir de seu id. |
+| *POST*      | `/users`      | [:mag_right:]()  | Cria um objeto "user" mediado pelo middleware de validação. |
+| *DELETE*    | `/users/{id}` | [:mag_right:]()  | Exclui Exclui um objeto "user" apartir de seu id. |
 
 <br />
 <br />
@@ -65,3 +65,14 @@ O serviço de *back-end* deste projeto provê uma singela *api-rest* desenvolvid
 | *GET*       | `/ads/{id}`      | [:mag_right:]() | Retorna um objeto do tipo "ads" apartir do seu id. |
 | *GET*       | `/ads/{petName}` | [:mag_right:]() | Retorna um objeto do tipo "ads" apartir do nome do pet. |
 | *POST*      | `/ads`           | [:mag_right:]() | Cria um objeto do tipo "ads" conforme middleware de validação. |
+
+<br />
+<br />
+
+## /images :national_park:
+
+| Método Http | Rota                  | Detalhes        | descrição     |
+| :---:       | :---                  | :---:           | :---          |
+| *GET*       | `/images`             | [:mag_right:]() | Retorna a lista com todas as imagens cadastradas. |
+| *GET*       | `/images/album/{id}`  | [:mag_right:]() | Retorna todos objetos do tipo "image" apartir de um id. |
+| *GET*       | `/images/albums/ads`  | [:mag_right:]() | Retorna todos as imagens associadas a cada objeto "ads". |

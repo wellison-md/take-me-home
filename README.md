@@ -1,7 +1,7 @@
 # :cat: :dog: Take me home
 
 
-:dart: *Take me Home* é uma web-app cujo objetivo é conectar pessoas interessadas em adoção a animais que precisam de novos lares, por meio de uma plataforma moderna que facilita o processo de adoção. Este projeto faz parte dos meus projetos pessoais com o objetivo de consolidar meus conhecimentos em tecnologias como: Node.js, MySql, Express, React.js, JWT e Jest.
+:dart: ***Take me Home*** é uma web-app cujo objetivo é conectar pessoas interessadas em adoção a animais que precisam de novos lares, por meio de uma plataforma moderna que facilita o processo de adoção. Este projeto faz parte dos meus projetos pessoais com o objetivo de consolidar meus conhecimentos em tecnologias como: Node.js, MySql, Express, Docker, React.js, Styled-Components, HTML, CSS, JS, JWT e Jest.
 
 ## Sumário
  - :zap: [Início rápido](#zap-início-rápido)
